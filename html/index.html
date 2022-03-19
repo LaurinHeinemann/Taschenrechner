@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <div id="ergebnisfläche"> <!-- Erstellen eines leeren Rahmens der in css gestaltet wird (durch die id="ergebnisfläche" ansteuerbar) -->
+    </div>
+    <table> <!-- Erstellen einer Tabelle -->
+        <tr> <!-- Erstellen einer Zeile in der Tabelle -->
+            <td onclick="zahlEingeben('(')" class="funktionen">(</td> <!-- Erstellen einer Zelle in der jeweiligen Zeile -->
+            <td onclick="zahlEingeben(')')" class="funktionen">)</td> <!-- Erstellen einer Klasse die in css manipuliert wird -->
+            <td onclick="alleLoeschen()" class="funktionen">C</td> <!-- Erstellen eines onclick Attributes das beim klicken auf die jeweilige Zelle die jeweilige Funktion auslöst -->
+            <td onclick="letzteLoeschen()" class="funktionen">DEL</td>
+        </tr> <!-- Ende der Zeile in der Tabelle -->
+        <tr>
+            <td onclick="zahlEingeben(7)">7</td>
+            <td onclick="zahlEingeben(8)">8</td>
+            <td onclick="zahlEingeben(9)">9</td>
+            <td onclick="zahlEingeben(' / ')" class="funktionen">/</td>
+        </tr>
+        <tr>
+            <td  onclick="zahlEingeben(4)">4</td>
+            <td  onclick="zahlEingeben(5)">5</td>
+            <td  onclick="zahlEingeben(6)">6</td>
+            <td  onclick="zahlEingeben(' * ')" class="funktionen">x</td>
+        </tr>
+        <tr>
+            <td  onclick="zahlEingeben(1)">1</td>
+            <td  onclick="zahlEingeben(2)">2</td>
+            <td  onclick="zahlEingeben(3)">3</td>
+            <td  onclick="zahlEingeben(' + ')" class="funktionen">+</td>
+        </tr>
+        <tr>
+            <td  onclick="zahlEingeben(0)">0</td>
+            <td  onclick="zahlEingeben('.')">,</td>
+            <td  onclick="ergebnisBerechnen()" id="ergebnis">=</td> <!-- Erstellen einer id, um diese Zelle seperat in css zu manipulieren -->
+            <td  onclick="zahlEingeben(' - ')" class="funktionen">-</td>
+        </tr>
+    </table> <!-- Ende der Tabelle -->
+</body>
+</html>

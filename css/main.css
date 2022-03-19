@@ -1,0 +1,46 @@
+body { /* Manipulieren des gesamten body */
+    font-family: 'Smooch Sans', sans-serif; /* Ändern der Schriftart */
+    margin: 0; /* Außenabstände der Seite auf 0 setzen */
+}
+table { /* Manipulieren der gesamten Tabelle */
+    width: 100%; /* Breite der Tabelle über die gesamte Seite */
+    height: 70vh; /* 70% der Höhe des Ansichtsfensters */
+    background-color: rgb(25,25,25); /* Ändern der Hintergrundfarbe der Tabelle */
+    color: white; /* Ändern der Schriftfarbe innerhalb der Tabelle */
+}
+
+td { /* Manipulieren der Zellen */
+    width: 25%; /* Breite der Zellen jeweils 25% der gesamten Seite (4 Zellen --> 100%) */
+    text-align: center; /* Text mittig in den Zellen ausrichten */
+    font-size: 40px; /* Ändern der Schriftgröße innerhalb der Zellen */
+    background-color: rgb(32,32,32); /* Ändern der Hintergrundfarbe der Zellen */
+}
+
+td:hover { /* Manipulieren der Anzeige der jeweiligen Zelle beim "Schweben" des Cursors über der jeweiligen Zelle */
+    background-color: lightslategrey; /* Ändern der Hintergrundfarbe der Zellen */
+    cursor: pointer; /* Ändern des cursors zu einem Zeiger */
+    transition: all 300ms ease; /* Fügt einen Übergang beim "Schweben" des Cursors über der jeweiligen Zelle ein */
+}
+#ergebnisfläche { /* Manipulieren des Bereichs (div) (zuvor in html mit id="ergebnisfläche" festgelegt) */
+    height: 30vh; /* 30% der Höhe des Ansichtsfensters --> ergibt mit den 70vh der Tabelle genau 100% des Ansichtsfensters */
+    background-color: rgb(1, 128, 150); /* Ändern der Hintergrundfarbe der Ergebnisfläche */
+    color: white; /* Ändern der Schriftfarbe innerhalb der Ergebnisfläche */
+    font-size: 110px; /* Ändern der Schriftgröße innerhalb der Ergebnisfläche */
+    display: flex; /* Erstellt eine Flexbox */
+    justify-content: flex-end; /* Text am vertikalen Ende (x-Achse) der Flexbox anzeigen (rechts) */
+    align-items: flex-end; /* Text am horizontalen Ende (y-Achse) der Flexbox anzeigen (unten) */
+    padding: 30px; /* Kreiert einen Abstand zwischen Text und der Grenze des Bereichs */
+    box-sizing: border-box; /* Legt die Größe der Box fest, damit sie sich aufgrund des Verändern des Paddings nicht verschiebt */
+}
+#ergebnis { /* Manipulieren der Zelle "Ergebnis" (zuvor in html mit id="ergebnis" festgelegt) */
+    background-color: rgb(1, 128, 150); /* Ändern der Hintergrundfarbe dieser Zelle */
+}
+#ergebnis:hover { /* Manipulieren der Anzeige der Zelle "Ergebnis" beim "Schweben" des Cursors über dieser Zelle */
+    background-color: lightslategrey; /* Ändern der Hintergrundfarbe dieser Zelle */
+}
+.funktionen { /* Manipulieren bestimmter Zellen (zuvor in html mit class="funktionen" festgelegt) */
+    background-color: rgb(28,28,28); /* Ändern der Hintergrundfarbe dieser Zellen */
+}
+.funktionen:hover { /* Manipulieren der Anzeige bestimmter Zellen beim "Schweben" des Cursors über diesen Zellen */
+    background-color: lightslategrey; /* Ändern der Hintergrundfarbe dieser Zellen */
+}
